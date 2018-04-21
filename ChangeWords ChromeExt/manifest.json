@@ -1,0 +1,29 @@
+{
+  "manifest_version":2,
+  "name": "Text Edit",
+  "version": "0.1",
+  "content_scripts": [
+   {
+     "matches": [
+       "<all_urls>"
+     ],
+     "js": ["content.js"]
+   }
+ ],
+ "permissions": ["activeTab","declarativeContent", "storage"],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128":"Fast_text128.png",
+        "48":"Fast_text48.png",
+        "16":"Fast_text16.png"
+      }
+    },
+  "description": "Click a word to change it!",
+  "icons": {"128":"Fast_text128.png",
+            "48":"Fast_text48.png",
+            "16":"Fast_text16.png"}
+
+
+
+}
