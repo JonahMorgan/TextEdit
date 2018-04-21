@@ -3,6 +3,7 @@ let button = document.getElementById("toggleEdit");
 function toggle(){
   i++;
   i %= 2;
+  console.log(i);
 }
 if(i==1){
 var body = document.getElementsByTagName("body")
